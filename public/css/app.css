@@ -1753,6 +1753,10 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .-mt-px {
   margin-top: -1px;
 }
@@ -1939,6 +1943,14 @@ html {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .pt-0 {
   padding-top: 0px;

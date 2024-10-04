@@ -16,13 +16,12 @@
 
 <body class="font-sans antialiased bg-gray-100 text-gray-900">
 
+
     <!-- Navbar -->
     @include('components.navbar')
 
     <!-- Conteúdo da página -->
-    <div>
-        @yield('content')
-    </div>
+    @yield('content')
 
     <!-- Footer -->
     @include('components.footer')
