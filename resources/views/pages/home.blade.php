@@ -19,5 +19,9 @@
     @include('../partials/services')
     <!-- Suporte -->
     @include('../partials/suporte')
+    <!-- Depoimentos -->
+    @include('../partials/depoimentos')
+    <!-- FAQ list -->
+    @include('../partials/faq')
 </main>
 @endsection

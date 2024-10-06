@@ -5,7 +5,14 @@ module.exports = {
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
-    plugins: [require("daisyui")],
+    plugins: [require("@tailwindcss/typography"), require("daisyui")],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ["Source Sans Pro", "sans-serif"],
+            },
+        },
+    },
     daisyui: {
         themes: [
             {

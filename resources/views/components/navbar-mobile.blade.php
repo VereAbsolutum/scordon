@@ -1,8 +1,8 @@
-<nav class="bg-base-100 text-base-content">
+<nav class="bg-base-100 bg-primary">
     <div class="container mx-auto px-4">
         <div class="navbar">
             <div class="flex-1">
-                <a class="btn btn-ghost text-xl">daisyUI</a>
+                <a class="btn btn-ghost text-xl">SCordon</a>
             </div>
             <div class="flex-none lg:hidden">
                 <button class="btn btn-square btn-ghost" id="menu-toggle">
