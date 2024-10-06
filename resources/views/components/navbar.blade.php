@@ -1,4 +1,4 @@
-<div class="bg-base-100 ">
+<nav class="bg-base-100 text-base-content">
     <div class="container mx-auto px-4">
         <div class="navbar px-0">
             <div class="flex-1">
@@ -6,7 +6,11 @@
             </div>
             <div class="flex-none">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Link</a></li>
+                    <li><a>Nossa Página</a></li>
+                    <li><a>Conheça Nossos Produtos</a></li>
+                    <li><a>Contacte O Suporte</a></li>
+                    <li><a>Saiba Mais Sobre a Empresa</a></li>
+                    {{--
                     <li>
                         <details>
                             <summary>Parent</summary>
@@ -16,8 +20,9 @@
                             </ul>
                         </details>
                     </li>
+                    --}}
                 </ul>
             </div>
         </div>
     </div>
-</div>
+</nav>
