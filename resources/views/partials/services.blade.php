@@ -1,21 +1,18 @@
 <section id="servicos" class="servicos py-10 mt-10">
-    <div class="container mx-auto px-4">
-        <h1 class="text-center text-accent mb-4 mx-auto max-w-[550px]">
-            <span class="font-bold">
-                Serviços
-            </span>
-        </h1>
-        <h2 class="text-center mb-4 mx-auto max-w-[550px] text-4xl ">
-            <span class="font-bold">
-                Transformamos suas ideias em soluções digitais
-            </span>
-        </h1>
+    <x-container>
+        <x-heading1 class="text-center">
+            Serviços
+        </x-heading1 >
+        <x-heading2 class="text-center">
+            Transformamos suas ideias em soluções digitais
+        </x-heading2>
+
         <p class="text-center mb-4 mx-auto max-w-[550px] ">
             Descubra como nossos serviços de desenvolvimento de software, podem
             transformar seu negócio.
         </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2  gap-6 mt-12 p-5 rounded-lg mt-[5rem]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 p-5 rounded-lg mt-[5rem]">
             <div class="flex justify-center">
                 @include('../components/cards/card-no-image', [
                     'title' => 'Desenvolvimento de Software',
@@ -51,5 +48,5 @@
                 ])
             </div>
         </div>
-    </div>
+    </x-container>
 </section>
