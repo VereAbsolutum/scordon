@@ -1,9 +1,7 @@
-
-
 <section id="hero">
     <div class="bg-primary font-poppins py-4">
-        <x-container>
-            <x-flex-layout>
+        <x-tw.layouts.container>
+            <x-tw.layouts.flex-layout>
                 <div class="w-full flex justify-center">
                     <div class="text-center lg:text-left mr-4 max-w-[400px]">
                         <h1 class="text-4xl font-extrabold">
@@ -22,10 +20,9 @@
                     <img
                         src="{{ asset('Snapshot_4.PNG') }}"
                         class="w-full max-w-md rounded-lg shadow-2xl"
-                        alt="Hero Image"
-                    />
+                        alt="Hero Image" />
                 </div>
-            </x-layout-flex>
-        </x-container>
+            </x-tw.layouts.flex-layout>
+        </x-tw.layouts.container>
     </div>
 </section>
