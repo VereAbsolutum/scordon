@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class Footer extends Component
 {
+    public $footerItems;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($footerItems)
     {
-        //
+        $this->footerItems = $footerItems;
     }
 
     /**

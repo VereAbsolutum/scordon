@@ -6,21 +6,13 @@ use Illuminate\View\Component;
 
 class Navbar extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $navItems;
+
+    public function __construct(array $navItems = [])
     {
-        //
+        $this->navItems = $navItems;
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
-     */
     public function render()
     {
         return view('components.tw.navigation.navbar');

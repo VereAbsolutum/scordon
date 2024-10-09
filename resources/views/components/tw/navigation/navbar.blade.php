@@ -1,3 +1,5 @@
+@props(['navItems' => []])
+
 <nav class="bg-base-100 bg-primary">
     <div class="container mx-auto px-4">
         <div class="navbar">
@@ -12,20 +14,29 @@
                 </button>
             </div>
             <div class="hidden lg:flex flex-none">
+                @foreach($navItems as $items)
                 <ul class="menu menu-horizontal px-1">
-                    {{ $slot }}
+                    @foreach($items['links'] as $content)
+                    <li><a href="{{ $content['url'] }}" class="link link-hover">{{ $content['text'] }}</a></li>
+                    @endforeach
                 </ul>
+                @endforeach
             </div>
         </div>
         <div class="lg:hidden hidden" id="mobile-menu">
+        @foreach($navItems as $items)
             <ul class="menu flex flex-col p-4 bg-base-100 rounded-lg mt-2">
-                {{ $slot }}
+            @foreach($items['links'] as $content)
+                <li><a href="{{ $content['url'] }}" class="link link-hover">{{ $content['text'] }}</a></li>
+            @endforeach
             </ul>
+        @endforeach
         </div>
     </div>
 </nav>
 
-@push('scripts') <!-- Corrigido de 'scrips' para 'scripts' -->
+
+@push('scripts')
 <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
