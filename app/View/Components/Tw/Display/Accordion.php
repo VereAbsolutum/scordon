@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Tw\DataDisplay;
+namespace App\View\Components\Tw\Display;
 
 use Illuminate\View\Component;
 
@@ -15,6 +15,6 @@ class Accordion extends Component
 
     public function render()
     {
-        return view('components.tw.data-display.accordion');
+        return view('components.tw.display.accordion');
     }
 }

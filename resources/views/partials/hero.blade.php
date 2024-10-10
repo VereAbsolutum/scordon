@@ -1,7 +1,7 @@
 <section id="hero">
     <div class="bg-primary font-poppins py-4">
         <x-tw.layouts.container>
-            <x-tw.layouts.flex-layout>
+            <x-tw.layouts.flex>
                 <div class="w-full flex justify-center">
                     <div class="text-center lg:text-left mr-4 max-w-[400px]">
                         <h1 class="text-4xl font-extrabold">
@@ -22,7 +22,7 @@
                         class="w-full max-w-md rounded-lg shadow-2xl"
                         alt="Hero Image" />
                 </div>
-            </x-tw.layouts.flex-layout>
+            </x-tw.layouts.flex>
         </x-tw.layouts.container>
     </div>
 </section>

@@ -64,14 +64,14 @@ $slides = [
         <div class="flex flex-col justify-end lg:w-1/2" style="max-width: 730px;">
             <div >
                 <!-- Header -->
-                <x-tw.typo.heading1 class="lg:text-left text-center">
+                <x-tw.text.h1 class="lg:text-left text-center">
                     Serviços
-                </x-tw.typo.heading1>
-                <x-tw.typo.heading2 class="lg:text-left text-center">
+                </x-tw.text.h1>
+                <x-tw.text.h2 class="lg:text-left text-center">
                     Transformamos suas ideias em soluções digitais
-                </x-tw.typo.heading2>
+                </x-tw.text.h2>
 
-                <x-tw.data-display.carousel-swiperjs :slides="$slides" />
+                <x-tw.display.carousel-swiperjs :slides="$slides" />
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Tw\DataDisplay;
+namespace App\View\Components\Tw\Display;
 
 use Illuminate\View\Component;
 
@@ -19,6 +19,6 @@ class CardHighlight extends Component
 
     public function render()
     {
-        return view('components.tw.data-display.card-highlight');
+        return view('components.tw.display.card-highlight');
     }
 }

@@ -1,20 +1,20 @@
 <?php
 
-namespace App\View\Components\Tw\DataDisplay;
+namespace App\View\Components\Tw\TextTitles;
 
 use Illuminate\View\Component;
 
-class CarouselSwiperjs extends Component
+class H2 extends Component
 {
-    public $slides;
+    public $class;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($slides)
+    public function __construct($class)
     {
-        $this->slides = $slides;
+        $this->class = $class;
     }
 
     /**
@@ -22,8 +22,9 @@ class CarouselSwiperjs extends Component
      *
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
+
     public function render()
     {
-        return view('components.tw.data-display.carousel-swiperjs');
+        return view('components.tw.text.h2');
     }
 }

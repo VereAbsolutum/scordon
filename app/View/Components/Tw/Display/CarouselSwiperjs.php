@@ -1,20 +1,20 @@
 <?php
 
-namespace App\View\Components\Tw\TextTitles;
+namespace App\View\Components\Tw\Display;
 
 use Illuminate\View\Component;
 
-class Heading1 extends Component
+class CarouselSwiperjs extends Component
 {
-    public $class;
+    public $slides;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($class)
+    public function __construct($slides)
     {
-        $this->class = $class;
+        $this->slides = $slides;
     }
 
     /**
@@ -22,9 +22,8 @@ class Heading1 extends Component
      *
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
-
     public function render()
     {
-        return view('components.tw.typo.heading1');
+        return view('components.tw.display.carousel-swiperjs');
     }
 }

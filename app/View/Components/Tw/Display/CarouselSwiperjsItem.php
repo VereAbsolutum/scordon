@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\Tw\Layouts;
+namespace App\View\Components\Tw\Display;
 
 use Illuminate\View\Component;
 
-class FlexLayout extends Component
+class CarouselSwiperjsItem extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class FlexLayout extends Component
      */
     public function render()
     {
-        return view('components.tw.layouts.flex-layout');
+        return view('components.tw.display.carousel-swiperjs-item');
     }
 }
