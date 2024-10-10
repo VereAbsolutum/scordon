@@ -61,7 +61,7 @@ $slides = [
         </div>
 
         <!-- Testimonial Slider -->
-        <div class="flex flex-col justify-end lg:w-1/2" style="max-width: 730px;">
+        <div class="flex flex-col justify-end lg:w-1/2 relative" style="max-width: 730px;">
             <div >
                 <!-- Header -->
                 <x-tw.text.h1 class="lg:text-left text-center">
@@ -71,7 +71,7 @@ $slides = [
                     Transformamos suas ideias em soluções digitais
                 </x-tw.text.h2>
 
-                <x-tw.display.carousel-swiperjs :slides="$slides" />
+                <x-tw.display.carousel-swiperjs :slides="$slides" uniqueId="1" />
             </div>
         </div>
     </div>

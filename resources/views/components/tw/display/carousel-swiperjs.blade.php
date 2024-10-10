@@ -1,76 +1,62 @@
-@props(['slides' => []])
+@props(['slides' => [], 'uniqueId'])
 
 @push('css')
 <style>
     .swiper-navigation {
-        display: flex;
-        justify-content: center;
-        /* Centraliza os botões */
-        margin-top: 10px;
-        /* Espaço entre o slider e os botões */
+        margin-top: 10px; 
+        position: relative; 
+        z-index: 10; 
     }
 
     .swiper-navigation button {
         background-color: #007bff;
-        /* Cor de fundo */
-        color: white;
-        /* Cor do texto */
-        border: none;
-        /* Remove bordas */
-        padding: 10px 20px;
-        /* Espaçamento interno */
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
         border-radius: 5px;
-        /* Bordas arredondadas */
-        cursor: pointer;
-        /* Muda o cursor para pointer */
-        margin: 0 5px;
-        /* Espaço entre os botões */
+        cursor: pointer; 
+        margin: 0 5px; 
+        position: relative; 
+        z-index: 1; 
     }
 
     .swiper-navigation button:hover {
-        background-color: #0056b3;
-        /* Cor ao passar o mouse */
+        background-color: #0056b3; 
     }
 </style>
 @endpush
 
-<div class="swiper">
+<div id="swiper-{{ $uniqueId }}" class="swiper">
     <div class="swiper-wrapper">
-
-    <!-- Slides -->
-    @foreach($slides as $slide)
-    <div {{ $attributes->merge(['class' => 'swiper-slide p-8 rounded-lg']) }}>
-        <h3 class="text-center lg:text-left text-xl font-semibold text-gray-800 font-montserrat">{{ $slide['title'] }}</h3>
-        <h4 class="text-center lg:text-left text-md text-gray-600 mb-4 font-montserrat">{{ $slide['subtitle'] }}</h4>
-        <p class="text-center lg:text-left text-2xl prose max-w-md mx-auto mb-6 text-gray-700 italic">
-            "{{ $slide['text'] }}"
-        </p>
-        <footer class="text-center lg:text-left">
-            <a href="{{ $slide['link'] }}" class="text-accent underline hover:text-blue-600">Saiba mais</a>
-        </footer>
+        <!-- Slides -->
+        @foreach($slides as $slide)
+        <div {{ $attributes->merge(['class' => 'swiper-slide p-8 rounded-lg']) }}>
+            <h3 class="text-center lg:text-left text-xl font-semibold text-gray-800 font-montserrat">{{ $slide['title'] }}</h3>
+            <h4 class="text-center lg:text-left text-md text-gray-600 mb-4 font-montserrat">{{ $slide['subtitle'] }}</h4>
+            <p class="text-center lg:text-left text-2xl prose max-w-md mx-auto mb-6 text-gray-700 italic">
+                "{{ $slide['text'] }}"
+            </p>
+            <footer class="text-center lg:text-left">
+                <a href="{{ $slide['link'] }}" class="text-accent underline hover:text-blue-600">Saiba mais</a>
+            </footer>
+        </div>
+        @endforeach
     </div>
-    @endforeach
-
-    </div>
-
-    <!-- Carousel Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
 </div>
 
-<!-- Navigation Buttons -->
+<!-- Carousel Navigation -->
 <div class="swiper-navigation">
-    <button class="swiper-button-prev">Anterior</button>
-    <button class="swiper-button-next">Próximo</button>
+    <button class="swiper-prev">Anterior</button>
+    <button class="swiper-next">Próximo</button>
 </div>
 
 @push('scripts')
 <!-- Swiper -->
 <script>
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('#swiper-{{ $uniqueId }}', {
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
         },
         autoHeight: true
     });

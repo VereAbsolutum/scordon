@@ -23,16 +23,16 @@ $items = [
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 p-5 rounded-lg mt-[5rem]">
             <div class="flex justify-center">
-                <x-tw.display.card-highlight :items="$items" :title="'Desenvolvimento de Software'" />
+                <x-tw.display.card :items="$items" :title="'Desenvolvimento de Software'" />
             </div>
             <div class="flex justify-center">
-                <x-tw.display.card-highlight :items="$items" :title="'Desenvolvimento de Software'" />
+                <x-tw.display.card :items="$items" :title="'Desenvolvimento de Software'" />
             </div>
             <div class="flex justify-center">
-                <x-tw.display.card-highlight :items="$items" :title="'Desenvolvimento de Software'" />
+                <x-tw.display.card :items="$items" :title="'Desenvolvimento de Software'" />
             </div>
             <div class="flex justify-center">
-                <x-tw.display.card-highlight :items="$items" :title="'Desenvolvimento de Software'" />
+                <x-tw.display.card :items="$items" :title="'Desenvolvimento de Software'" />
             </div>
         </div>
     </x-tw.layouts.container>

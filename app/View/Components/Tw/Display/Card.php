@@ -4,7 +4,7 @@ namespace App\View\Components\Tw\Display;
 
 use Illuminate\View\Component;
 
-class CardHighlight extends Component
+class Card extends Component
 {
     public $title;
     public $badge;
@@ -19,6 +19,6 @@ class CardHighlight extends Component
 
     public function render()
     {
-        return view('components.tw.display.card-highlight');
+        return view('components.tw.display.card');
     }
 }

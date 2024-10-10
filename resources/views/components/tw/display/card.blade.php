@@ -1,3 +1,5 @@
+@props(['badge', 'title', 'items'])
+
 <div class="card bg-base-100 w-full shadow-xl border-l-4 border-blue-500">
     <div class="card-body">
         <div class="badge badge-secondary">{{ $badge }}</div>
