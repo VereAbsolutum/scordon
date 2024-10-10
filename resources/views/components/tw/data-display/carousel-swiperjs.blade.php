@@ -1,3 +1,6 @@
+@props(['slides' => []])
+
+@push('css')
 <style>
     .swiper-navigation {
         display: flex;
@@ -29,10 +32,24 @@
         /* Cor ao passar o mouse */
     }
 </style>
+@endpush
+
 <div class="swiper">
     <div class="swiper-wrapper">
 
-        {{ $slot }}
+    <!-- Slides -->
+    @foreach($slides as $slide)
+    <div {{ $attributes->merge(['class' => 'swiper-slide p-8 rounded-lg']) }}>
+        <h3 class="text-center lg:text-left text-xl font-semibold text-gray-800 font-montserrat">{{ $slide['title'] }}</h3>
+        <h4 class="text-center lg:text-left text-md text-gray-600 mb-4 font-montserrat">{{ $slide['subtitle'] }}</h4>
+        <p class="text-center lg:text-left text-2xl prose max-w-md mx-auto mb-6 text-gray-700 italic">
+            "{{ $slide['text'] }}"
+        </p>
+        <footer class="text-center lg:text-left">
+            <a href="{{ $slide['link'] }}" class="text-accent underline hover:text-blue-600">Saiba mais</a>
+        </footer>
+    </div>
+    @endforeach
 
     </div>
 

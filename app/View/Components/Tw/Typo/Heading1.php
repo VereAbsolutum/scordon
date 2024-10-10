@@ -4,7 +4,7 @@ namespace App\View\Components\Tw\TextTitles;
 
 use Illuminate\View\Component;
 
-class Heading3 extends Component
+class Heading1 extends Component
 {
     public $class;
     /**
@@ -22,8 +22,9 @@ class Heading3 extends Component
      *
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
+
     public function render()
     {
-        return view('components.tw.text-titles.heading3');
+        return view('components.tw.typo.heading1');
     }
 }

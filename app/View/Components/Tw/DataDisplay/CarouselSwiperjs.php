@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class CarouselSwiperjs extends Component
 {
+    public $slides;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($slides)
     {
-        //
+        $this->slides = $slides;
     }
 
     /**

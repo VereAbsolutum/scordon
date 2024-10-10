@@ -25,6 +25,6 @@ class Heading2 extends Component
 
     public function render()
     {
-        return view('components.tw.text-titles.heading2');
+        return view('components.tw.typo.heading2');
     }
 }
