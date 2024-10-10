@@ -45,10 +45,10 @@
 </div>
 
 <!-- Carousel Navigation -->
-<div class="swiper-navigation">
+<nav class="swiper-navigation">
     <button class="swiper-prev">Anterior</button>
     <button class="swiper-next">Próximo</button>
-</div>
+</nav>
 
 @push('scripts')
 <!-- Swiper -->
