@@ -33,10 +33,10 @@
     </div>
 
     <!-- Testimonial Slider -->
-    <div class="flex flex-col justify-end lg:w-1/2 relative container  mx-auto px-4" style="max-width: 730px;">
+    <div class="flex flex-col justify-end lg:w-1/2 relative lg:mx-0 container mx-auto px-4" style="max-width: 730px;">
         <div >
 
-            <h1  class="lg:text-left  text-heading3 font-bold mb-20">
+            <h1  class="lg:text-left text-center  text-heading3 font-bold mb-20">
                 {{ $title }}
             </h1>
             {{--<h2 class="lg:text-left text-center "> {{ $subtitle }}</h2> --}}
@@ -46,15 +46,15 @@
                     <!-- Slides -->
                     @foreach($slides as $slide)
                     <div {{ $attributes->merge(['class' => 'swiper-slide p-8 pl-0 rounded-lg']) }}>
-                        <h2 class="text-left text-heading4 font-bold mb-4">Logo</h2>
+                        <h2 class="text-left text-center  text-heading4 font-bold mb-4">Logo</h2>
 
-                        <p class="text-left text-2xl prose max-w-md mb-6 text-gray-700">
+                        <p class="text-left text-center  text-2xl prose max-w-md mb-6 text-gray-700">
                             "{{ $slide['text'] }}"
                         </p>
-                        <h3 class="text-left text-lg font-semibold font-montserrat">{{ $slide['title'] }}</h3>
-                        <h4 class="text-left text-sm mb-4 font-montserrat">{{ $slide['subtitle'] }}</h4>
-                        <footer class="text-left">
-                            <a href="{{ $slide['link'] }}" class="text-accent underline hover:text-blue-600">{{ $buttonText }}</a>
+                        <h3 class="text-left text-center  text-lg font-semibold font-montserrat">{{ $slide['title'] }}</h3>
+                        <h4 class="text-left text-center  text-sm mb-4 font-montserrat">{{ $slide['subtitle'] }}</h4>
+                        <footer class="text-lefttext-center  ">
+                            <x-atoms.button-link class="lg:text-left text-center">{{ $buttonText }}</x-atoms.button-link>
                         </footer>
                     </div>
                     @endforeach
@@ -63,8 +63,8 @@
 
             <!-- Carousel Navigation -->
             <nav class="swiper-navigation">
-                <button class="swiper-prev">Anterior</button>
-                <button class="swiper-next">Próximo</button>
+                <button class="swiper-prev lg:text-left text-center ">Anterior</button>
+                <button class="swiper-next lg:text-left text-center ">Próximo</button>
             </nav>
         </div>
     </div>

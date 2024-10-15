@@ -53,6 +53,7 @@ $slides = [
 @endphp
 
 <section id="faq" class="faq">
+
     <x-organisms.testimonial
         :slides="$slides"
         uniqueId="1"

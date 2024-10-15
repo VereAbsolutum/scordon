@@ -1,1 +1,1 @@
-<h1 class="text-display font-medium" style="color:black">{{ $slot }}</h1>
+<h1 class="text-display font-medium font-display" style="color:black">{{ $slot }}</h1>
