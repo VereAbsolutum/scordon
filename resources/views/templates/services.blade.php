@@ -9,12 +9,12 @@ $items = [
 
 <section id="servicos" class="servicos py-10 mt-10">
     <x-tw.layouts.container>
-        <x-tw.text.h1 class="text-center">
+        <x-atoms.heading1 class="text-center">
             Serviços
-        </x-tw.text.h1>
-        <x-tw.text.h2 class="text-center">
+        </x-atoms.heading1>
+        <x-atoms.heading2 class="text-center">
             Transformamos suas ideias em soluções digitais
-        </x-tw.text.h2>
+        </x-atoms.heading2>
 
         <p class="text-center mb-4 mx-auto max-w-[550px]">
             Descubra como nossos serviços de desenvolvimento de software podem

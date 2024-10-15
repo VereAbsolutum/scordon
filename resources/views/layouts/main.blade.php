@@ -10,6 +10,14 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,28 +33,27 @@
 
     <!-- Css empilhados serão inseridos aqui -->
     @stack('css')
+
+
 </head>
 
 @php
 $navItems = [
     [
         'links' => [
-            ['text' => 'Consultoria', 'url' => '/servicos/consultoria'],
-            ['text' => 'Desenvolvimento', 'url' => '/servicos/desenvolvimento'],
-            ['text' => 'Suporte Técnico', 'url' => '/servicos/suporte'],
+            ['text' => 'Visite nosso Site', 'url' => '#'],
+            ['text' => 'Suporte e Ajuda', 'url' => '#'],
         ],
     ],
     [
         'links' => [
-            ['text' => 'Nossa História', 'url' => '/sobre/nossa-historia'],
-            ['text' => 'Equipe', 'url' => '/sobre/equipe'],
-            ['text' => 'Valores', 'url' => '/sobre/valores'],
+            ['text' => 'A Nossa Jornada', 'url' => '#'],
         ],
     ],
     [
         'links' => [
-            ['text' => 'Fale Conosco', 'url' => '/contato/fale-conosco'],
-            ['text' => 'Localização', 'url' => '/contato/localizacao'],
+            ['text' => 'Entre em Contato', 'url' => '#'],
+            ['text' => 'Onde Estamos', 'url' => '#'],
         ],
     ],
 ];
@@ -82,9 +89,9 @@ $footerItems = [
 @endphp
 
 
-<body class="font-sans antialiased bg-gray-100 text-gray-700">
+<body  class="font-sans antialiased bg-primary-100 text-black text-body">
     <!-- Navbar -->
-    <x-tw.navigation.navbar :navItems="$navItems" />
+    <x-organisms.navbar :navItems="$navItems" />
 
     <!-- Conteúdo da página -->
     @yield('content')

@@ -62,7 +62,7 @@ class SiteController extends Controller
                 [
                     'name' => 'João Silva',
                     'company' => 'CEO, Imobiliária XYZ',
-                    'testimonial' => 'A plataforma de gestão imobiliária facilitou nossa rotina diária. Os relatórios são claros e fáceis de acessar, e o suporte é excelente!',
+                    'testimonial' => 'Vocês (time da DB1) foram - e são - o fator crítico de sucesso desse projeto. Vocês conseguiram pegar toda essa essência do nosso desejo, do nosso sonho, e transformar em um produto!',
                     'link' => 'https://example.com/saiba-mais'
                 ],
                 [

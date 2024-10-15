@@ -14,14 +14,12 @@
 @section('content')
 <main>
     <!-- Hero -->
-    @include('../partials/hero')
-    <!-- Servicos -->
-    @include('../partials/services')
-    <!-- Suporte -->
-    @include('../partials/suporte')
+    @include('../templates/hero')
+    <!-- Services -->
+    @include('../templates/services')
     <!-- Depoimentos -->
-    @include('../partials/depoimentos')
-    <!-- FAQ list -->
-    @include('../partials/faq')
+    @include('../templates/depoimentos')
+    <!-- FAQ -->
+    @include('../templates/faq')
 </main>
 @endsection

@@ -23,9 +23,9 @@
             </aside>
             @foreach($footerItems as $items)
             <nav>
-                <h6 class="footer-title">{{ $items['title'] }}</h6>
+                <h6 class="footer-title text-title-md">{{ $items['title'] }}</h6>
                 @foreach($items['links'] as $content)
-                <a href="{{ $content['link'] }}" class="link link-hover">{{ $content['text'] }}</a>
+                <a href="{{ $content['link'] }}" class="link link-hover text-navbar">{{ $content['text'] }}</a>
                 @endforeach
             </nav>
             @endforeach

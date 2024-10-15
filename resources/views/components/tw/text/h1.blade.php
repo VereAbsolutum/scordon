@@ -1,1 +1,1 @@
-<h1 class="text-3xl font-bold text-gray-800 {{ $class }}">{{ $slot }}</h1>
+<h1 class="text-title font-bold text-secondary uppercase {{ $class }}">{{ $slot }}</h1>

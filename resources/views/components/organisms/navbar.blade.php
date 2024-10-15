@@ -1,6 +1,6 @@
 @props(['navItems' => []])
 
-<nav class="text-navbar">
+<nav class="text-navbar text-gray-500">
     <div class="container mx-auto px">
         <div class="navbar px-0">
             <div class="flex-1">
@@ -17,7 +17,7 @@
                 @foreach($navItems as $items)
                 <ul class="menu menu-horizontal px-1">
                     @foreach($items['links'] as $content)
-                    <li><a href="{{ $content['url'] }}" class="link link-hover text-navbar">{{ $content['text'] }}</a></li>
+                    <li><a href="{{ $content['url'] }}" class="link link-hover hover:text-secondary hover:font-medium text-navbar">{{ $content['text'] }}</a></li>
                     @endforeach
                 </ul>
                 @endforeach

@@ -22,7 +22,7 @@ $slides = [
             [
                 'title' => 'Cliente 1',
                 'subtitle' => 'Profissão ou Cargo',
-                'text' => 'Este produto mudou minha vida! Recomendo a todos.',
+                'text' => '“Vocês (time da DB1) foram - e são - o fator crítico de sucesso desse projeto. Vocês conseguiram pegar toda essa essência do nosso desejo, do nosso sonho, e transformar em um produto!”',
                 'link' => '#',
             ],
             [
@@ -53,26 +53,12 @@ $slides = [
 @endphp
 
 <section id="faq" class="faq">
-    <div class="flex flex-col items-center h-full gap-[50px] lg:gap-[100px] lg:flex-row lg:items-end">
-
-        <!-- Testimonial image -->
-        <div class="p-4 lg:w-1/2" style="max-width: 512px;">
-            <img src="{{ $testimonials['image'] }}" alt="Pessoa no Computador" class="h-auto rounded-lg object-cover ">
-        </div>
-
-        <!-- Testimonial Slider -->
-        <div class="flex flex-col justify-end lg:w-1/2 relative" style="max-width: 730px;">
-            <div >
-                <!-- Header -->
-                <x-tw.text.h1 class="lg:text-left text-center">
-                    Serviços
-                </x-tw.text.h1>
-                <x-tw.text.h2 class="lg:text-left text-center">
-                    Transformamos suas ideias em soluções digitais
-                </x-tw.text.h2>
-
-                <x-tw.display.carousel-swiperjs :slides="$slides" uniqueId="1" />
-            </div>
-        </div>
-    </div>
+    <x-organisms.testimonial
+        :slides="$slides"
+        uniqueId="1"
+        title="Nas palavras de nossos clientes."
+        subtitle="Transformamos suas ideias em soluções digitais."
+        buttonText="Saiba mais"
+        :testimonials="$testimonials"
+    />
 </section>
