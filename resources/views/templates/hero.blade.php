@@ -1,13 +1,13 @@
 <section id="hero">
-    <div class=" font-poppins py-4 bg-accent">
+    <div class=" font-poppins py-4 bg-secondary-light  flex align-center ">
         <x-tw.layouts.container>
             <x-tw.layouts.flex>
-                <div class="lg:w-2/3 flex justify-center items-end py-8">
+                <div class="lg:w-2/3 flex  justify-center items-end py-12">
                     <div class="w-full h-fit">
                         <div class="text-center lg:text-left leading-none">
                             <x-atoms.display>
                                 Nós criamos um sistema de gestão de sucesso <br>
-                                <span class="font-bold text-secondary">e ajudamos pessoas com negócio.</span>
+                                <span class="font-bold text-primary">e ajudamos pessoas com negócio.</span>
                             </x-atoms.display>
                             <div class="py-6">
                                 <x-atoms.text>

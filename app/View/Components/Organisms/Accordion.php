@@ -1,20 +1,19 @@
 <?php
 
-namespace App\View\Components\Atoms;
+namespace App\View\Components\Organisms;
 
 use Illuminate\View\Component;
 
-class ButtonNav extends Component
+class Accordion extends Component
 {
-    public $variant;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($variant='left')
+    public function __construct()
     {
-        $this->variant = $variant;
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class ButtonNav extends Component
      */
     public function render()
     {
-        return view('components.atoms.button-nav');
+        return view('components.organisms.accordion');
     }
 }
