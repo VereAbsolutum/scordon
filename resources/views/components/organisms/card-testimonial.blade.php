@@ -2,6 +2,7 @@
 
 <div class="card-testimonial">
     <h2 class="text-left text-heading4 font-bold mb-4">Logo</h2>
+    
 
     <x-atoms.sub-header variant="2" class="text-left prose mb-6 text-gray-700 max-w-full lg:max-w-md lg:mx-0 ">
         {{ $testimonial }}

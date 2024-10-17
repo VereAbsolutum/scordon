@@ -91,79 +91,19 @@ module.exports = {
                 sans: ["Montserrat", "sans-serif"],
             },
             fontSize: {
-                display: {
-                    default: "3.5rem", // Tamanho padrão
-                    lg: "3rem", // Tamanho para telas grandes
-                    md: "3.25rem", // Tamanho para telas médias
-                    sm: "2.75rem", // Tamanho para telas pequenas
-                },
-                heading1: {
-                    default: "2.5rem", // Tamanho padrão
-                    lg: "2.25rem", // Tamanho para telas grandes
-                    md: "2.4rem", // Tamanho para telas médias
-                    sm: "2rem", // Tamanho para telas pequenas
-                },
-                heading2: {
-                    default: "2rem", // Tamanho padrão
-                    lg: "1.875rem", // Tamanho para telas grandes
-                    md: "1.9rem", // Tamanho para telas médias
-                    sm: "1.75rem", // Tamanho para telas pequenas
-                },
-                heading3: {
-                    default: "1.75rem", // Tamanho padrão
-                    lg: "1.625rem", // Tamanho para telas grandes
-                    md: "1.7rem", // Tamanho para telas médias
-                    sm: "1.5rem", // Tamanho para telas pequenas
-                },
-                heading4: {
-                    default: "1.5rem", // Tamanho padrão
-                    lg: "1.375rem", // Tamanho para telas grandes
-                    md: "1.45rem", // Tamanho para telas médias
-                    sm: "1.25rem", // Tamanho para telas pequenas
-                },
-                heading5: {
-                    default: "1.25rem", // Tamanho padrão
-                    lg: "1.125rem", // Tamanho para telas grandes
-                    md: "1.2rem", // Tamanho para telas médias
-                    sm: "1rem", // Tamanho para telas pequenas
-                },
-                subheader: {
-                    default: "1.125rem", // Tamanho padrão
-                    lg: "1rem", // Tamanho para telas grandes
-                    md: "1.075rem", // Tamanho para telas médias
-                    sm: "0.875rem", // Tamanho para telas pequenas
-                },
-                paragraph1: {
-                    default: "1rem", // Tamanho padrão
-                    lg: "0.875rem", // Tamanho para telas grandes
-                    md: "0.925rem", // Tamanho para telas médias
-                    sm: "0.75rem", // Tamanho para telas pequenas
-                },
-                paragraph2: {
-                    default: "0.875rem", // Tamanho padrão
-                    lg: "0.75rem", // Tamanho para telas grandes
-                    md: "0.8rem", // Tamanho para telas médias
-                    sm: "0.625rem", // Tamanho para telas pequenas
-                },
-                paragraph3: {
-                    default: "0.75rem", // Tamanho padrão
-                    lg: "0.625rem", // Tamanho para telas grandes
-                    md: "0.7rem", // Tamanho para telas médias
-                    sm: "0.5rem", // Tamanho para telas pequenas
-                },
-                caption: {
-                    default: "0.625rem", // Tamanho padrão
-                    lg: "0.5rem", // Tamanho para telas grandes
-                    md: "0.55rem", // Tamanho para telas médias
-                    sm: "0.4375rem", // Tamanho para telas pequenas
-                },
-                footer: {
-                    default: "0.875rem", // Tamanho padrão
-                    lg: "0.75rem", // Tamanho para telas grandes
-                    md: "0.8rem", // Tamanho para telas médias
-                    sm: "0.625rem", // Tamanho para telas pequenas
-                },
-            },
+                display: ['3.5rem', { lineHeight: '1' }], // Título principal
+                heading1: ['2.5rem', { lineHeight: '1' }], // Título principal (H1)
+                heading2: ['2rem', { lineHeight: '1.2' }], // Título secundário (H2)
+                heading3: ['1.75rem', { lineHeight: '1.2' }], // Título terciário (H3)
+                heading4: ['1.5rem', { lineHeight: '1.2' }], // Título quaternário (H4)
+                heading5: ['1.25rem', { lineHeight: '1.2' }], // Título quinário (H5)
+                subheader: ['1.125rem', { lineHeight: '1.2' }], // Subtítulo
+                paragraph1: ['1rem', { lineHeight: '1.5' }], // Parágrafo principal
+                paragraph2: ['0.875rem', { lineHeight: '1.5' }], // Parágrafo secundário
+                paragraph3: ['0.75rem', { lineHeight: '1.5' }], // Parágrafo terciário
+                caption: ['0.625rem', { lineHeight: '1.5' }], // Legenda
+                footer: ['0.875rem', { lineHeight: '1.5' }], // Texto de rodapé
+              },
         },
     },
     plugins: [require("daisyui"), require("@tailwindcss/typography")],
