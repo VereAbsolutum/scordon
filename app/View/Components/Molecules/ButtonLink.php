@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class ButtonLink extends Component
 {
+    public $variant;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($variant="normal")
     {
-        //
+        $this->variant = $variant;
     }
 
     /**

@@ -17,7 +17,9 @@
                 @foreach($navItems as $items)
                 <ul class="menu menu-horizontal px-1">
                     @foreach($items['links'] as $content)
-                    <li><a href="{{ $content['url'] }}" class="link link-hover hover:text-secondary hover:font-medium text-subheader">{{ $content['text'] }}</a></li>
+                    <li>
+                        <x-molecules.button-link variant="menu">{{ $content['text'] }}</x-molecules.button-link>
+                    </li>
                     @endforeach
                 </ul>
                 @endforeach

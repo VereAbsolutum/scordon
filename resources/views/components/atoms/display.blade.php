@@ -2,9 +2,9 @@
 
 @php
     $classes = [
-        '1' => 'font-title font-medium text-display font-display',
-        '2' => 'font-title font-bold text-display font-display',
-        '3' => 'font-title font-extrabold text-display font-display',
+        '1' => 'font-medium lg:text-display-lg text-display-sm',
+        '2' => ' font-bold lg:text-display-lg text-display-sm',
+        '3' => 'font-extrabold lg:text-display-lg text-display-sm',
 ];
 
     $variantClasses = $classes[$variant];
