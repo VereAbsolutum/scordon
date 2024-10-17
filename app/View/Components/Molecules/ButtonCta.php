@@ -4,7 +4,7 @@ namespace App\View\Components\Molecules;
 
 use Illuminate\View\Component;
 
-class Button extends Component
+class ButtonCta extends Component
 {
     public $variant;
 
@@ -15,6 +15,6 @@ class Button extends Component
 
     public function render()
     {
-        return view('components.molecules.button');
+        return view('components.molecules.button-cta');
     }
 }

@@ -1,12 +1,11 @@
 @props(['title' => '', 'subtitle' => '', 'testimonial' => '', 'buttonText' => 'Saiba mais.'])
 
 <div class="card-testimonial">
-    <h2 class="text-left text-heading4 font-bold mb-4">Logo</h2>
-    
+    <h3 class="text-left text-heading4 font-bold mb-4">Logo</h3>
 
-    <x-atoms.sub-header variant="2" class="text-left prose mb-6 text-gray-700 max-w-full lg:max-w-md lg:mx-0 ">
+    <h4 class="font-normal text-subheader font-title text-left prose mb-6 text-gray-700 max-w-full lg:max-w-md lg:mx-0">
         {{ $testimonial }}
-    </x-atoms.sub-header>
+    </h4>
 
     <h3 class="text-left text-lg font-semibold font-montserrat">{{ $title }}</h3>
     <h4 class="text-left text-sm mb-4 font-montserrat">{{ $subtitle }}</h4>

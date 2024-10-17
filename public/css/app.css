@@ -2528,10 +2528,6 @@ html {
   text-align: center;
 }
 
-.font-display {
-  font-family: Oswald, sans-serif;
-}
-
 .font-sans {
   font-family: Montserrat, sans-serif;
 }
@@ -2557,6 +2553,11 @@ html {
 
 .text-display {
   font-size: 3.5rem;
+  line-height: 1;
+}
+
+.text-display-sm {
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -2893,5 +2894,15 @@ html {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-display-lg {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-display {
+    font-size: 3.5rem;
+    line-height: 1;
   }
 }

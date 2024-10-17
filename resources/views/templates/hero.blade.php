@@ -5,18 +5,18 @@
                 <div class="lg:w-2/3 flex  justify-center items-end py-12">
                     <div class="w-full h-fit">
                         <div class="text-center lg:text-left leading-none">
-                            <x-atoms.display variant="2">
+                            <h1 class="font-medium lg:text-display text-display-sm">
                                 Nós criamos um sistema de gestão de sucesso <br>
                                 <span class="text-secondary font-bold">e ajudamos pessoas com negócio.</span>
-                            </x-atoms.display>
+                            </h1>
                             <div class="py-6">
-                                <x-atoms.paragraph1>
+                                <p class="font-normal text-paragraph1">
                                     CdAdm, Gestão e Controle, num só lugar.
-                                </x-atoms.paragraph1>
+                                </p>
                             </div>
-                            <x-molecules.button variant="secondary">
+                            <x-molecules.button-cta variant="secondary">
                                 Fale com a gente, agora mesmo!
-                            </x-molecules.button>
+                            </x-molecules.button-cta>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,8 @@
                     <img
                         src="{{ asset('Snapshot_4.PNG') }}"
                         class="w-full max-w-md rounded-lg shadow-2xl"
-                        alt="Hero Image" />
+                        alt="Hero Image"
+                    />
                 </div>
             </x-tw.layouts.flex>
         </x-tw.layouts.container>

@@ -2,8 +2,8 @@
 
 @php
     $classes = [
-        "1" =>  "section-header max-w-xl text-center mx-auto", 
-        "2" =>  "section-header max-w-xl" 
+        "1" =>  "section-header max-w-xl text-center mx-auto",
+        "2" =>  "section-header max-w-xl"
     ];
 
     $variantClasses = $classes[$variant] ?? '2';
