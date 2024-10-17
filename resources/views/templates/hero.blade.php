@@ -1,22 +1,22 @@
 <section id="hero">
-    <div class=" font-poppins py-4 bg-secondary-light  flex align-center ">
+    <div class=" py-4 flex align-center ">
         <x-tw.layouts.container>
             <x-tw.layouts.flex>
                 <div class="lg:w-2/3 flex  justify-center items-end py-12">
                     <div class="w-full h-fit">
                         <div class="text-center lg:text-left leading-none">
-                            <x-atoms.display>
+                            <x-atoms.display variant="2">
                                 Nós criamos um sistema de gestão de sucesso <br>
-                                <span class="font-bold text-primary">e ajudamos pessoas com negócio.</span>
+                                <span class="text-secondary font-bold">e ajudamos pessoas com negócio.</span>
                             </x-atoms.display>
                             <div class="py-6">
-                                <x-atoms.text>
+                                <x-atoms.paragraph1>
                                     CdAdm, Gestão e Controle, num só lugar.
-                                </x-atoms.text>
+                                </x-atoms.paragraph1>
                             </div>
-                            <x-atoms.button variant="secondary">
+                            <x-molecules.button variant="secondary">
                                 Fale com a gente, agora mesmo!
-                            </x-atoms.button>
+                            </x-molecules.button>
                         </div>
                     </div>
                 </div>

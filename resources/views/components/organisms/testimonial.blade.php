@@ -42,8 +42,8 @@
 
             <!-- Carousel Navigation -->
             <nav class="swiper-navigation px-4">
-                <x-atoms.button-nav class="swiper-prev" variant="left" />
-                <x-atoms.button-nav class="swiper-next" variant="right" />
+                <x-molecules.button-nav class="swiper-prev" variant="left" />
+                <x-molecules.button-nav class="swiper-next" variant="right" />
             </nav>
         </div>
     </div>

@@ -4,17 +4,16 @@ namespace App\View\Components\Atoms;
 
 use Illuminate\View\Component;
 
-class Heading1 extends Component
+class Paragraph3 extends Component
 {
-    public $variant;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($variant="1")
+    public function __construct()
     {
-        $this->variant = $variant;
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class Heading1 extends Component
      */
     public function render()
     {
-        return view('components.atoms.heading1');
+        return view('components.atoms.paragraph3');
     }
 }

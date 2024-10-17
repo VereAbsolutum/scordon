@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class Display extends Component
 {
+    public $variant;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($variant="1")
     {
-        //
+        $this->variant = $variant;
     }
 
     /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\Atoms;
+namespace App\View\Components\Molecules;
 
 use Illuminate\View\Component;
 
-class Heading1 extends Component
+class ButtonNav extends Component
 {
     public $variant;
     /**
@@ -12,7 +12,7 @@ class Heading1 extends Component
      *
      * @return void
      */
-    public function __construct($variant="1")
+    public function __construct($variant='left')
     {
         $this->variant = $variant;
     }
@@ -24,6 +24,6 @@ class Heading1 extends Component
      */
     public function render()
     {
-        return view('components.atoms.heading1');
+        return view('components.molecules.button-nav');
     }
 }

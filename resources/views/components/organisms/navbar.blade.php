@@ -4,7 +4,7 @@
     <div class="container mx-auto px">
         <div class="navbar px-0">
             <div class="flex-1">
-                <a class="btn btn-ghost text-xl">SCordon</a>
+                <a class="btn btn-ghost text-subheader">SCordon</a>
             </div>
             <div class="flex-none lg:hidden">
                 <button class="btn btn-square btn-ghost" id="menu-toggle">
@@ -17,7 +17,7 @@
                 @foreach($navItems as $items)
                 <ul class="menu menu-horizontal px-1">
                     @foreach($items['links'] as $content)
-                    <li><a href="{{ $content['url'] }}" class="link link-hover hover:text-secondary hover:font-medium text-navbar">{{ $content['text'] }}</a></li>
+                    <li><a href="{{ $content['url'] }}" class="link link-hover hover:text-secondary hover:font-medium text-subheader">{{ $content['text'] }}</a></li>
                     @endforeach
                 </ul>
                 @endforeach

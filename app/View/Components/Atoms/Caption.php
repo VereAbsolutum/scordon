@@ -4,17 +4,16 @@ namespace App\View\Components\Atoms;
 
 use Illuminate\View\Component;
 
-class ButtonNav extends Component
+class Caption extends Component
 {
-    public $variant;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($variant='left')
+    public function __construct()
     {
-        $this->variant = $variant;
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class ButtonNav extends Component
      */
     public function render()
     {
-        return view('components.atoms.button-nav');
+        return view('components.atoms.caption');
     }
 }

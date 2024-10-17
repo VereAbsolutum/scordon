@@ -10,13 +10,13 @@
                                 <span class="font-bold text-secondary-dark">e eficaz com seus clientes.</span>
                             </x-atoms.display>
                             <div class="py-6">
-                                <x-atoms.text>
+                                <x-atoms.paragraph>
                                     CdAdm, Gestão e Controle, num só lugar.
-                                </x-atoms.text>
+                                </x-atoms.paragraph>
                             </div>
-                            <x-atoms.button>
+                            <x-molecules.button>
                                 Fale com a gente, agora mesmo!
-                            </x-atoms.button>
+                            </x-molecules.button>
                         </div>
                     </div>
                 </div>

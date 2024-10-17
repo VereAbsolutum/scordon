@@ -4,16 +4,17 @@ namespace App\View\Components\Atoms;
 
 use Illuminate\View\Component;
 
-class ButtonLink extends Component
+class Heading3 extends Component
 {
+    public $variant;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($variant="1")
     {
-        //
+        $this->variant = $variant;
     }
 
     /**
@@ -23,6 +24,6 @@ class ButtonLink extends Component
      */
     public function render()
     {
-        return view('components.atoms.button-link');
+        return view('components.atoms.heading3');
     }
 }

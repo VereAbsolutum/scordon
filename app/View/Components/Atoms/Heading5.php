@@ -4,7 +4,7 @@ namespace App\View\Components\Atoms;
 
 use Illuminate\View\Component;
 
-class Heading1 extends Component
+class Heading5 extends Component
 {
     public $variant;
     /**
@@ -24,6 +24,6 @@ class Heading1 extends Component
      */
     public function render()
     {
-        return view('components.atoms.heading1');
+        return view('components.atoms.heading5');
     }
 }

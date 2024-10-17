@@ -6,7 +6,7 @@
         'secondary' => 'btn btn-secondary text-white hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50',
     ];
 
-    $buttonClasses = $classes[$variant]
+    $buttonClasses = $classes[$variant];
 @endphp
 
 <button class="{{ $buttonClasses }}">{{ $slot }}</button>

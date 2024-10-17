@@ -89,7 +89,7 @@ $footerItems = [
 @endphp
 
 
-<body  class="font-sans antialiased bg-primary-100 text-black text-body">
+<body  class="font-sans antialiased bg-primary-100 bg-opacity-0 text-black text-body">
     <!-- Navbar -->
     <x-organisms.navbar :navItems="$navItems" />
 

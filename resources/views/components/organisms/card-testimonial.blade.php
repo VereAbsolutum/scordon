@@ -9,6 +9,6 @@
     <h3 class="text-left text-lg font-semibold font-montserrat">{{ $title }}</h3>
     <h4 class="text-left text-sm mb-4 font-montserrat">{{ $subtitle }}</h4>
     <footer class="text-left">
-        <x-atoms.button-link class="text-left">{{ $buttonText }}</x-atoms.button-link>
+        <x-molecules.button-link class="text-left">{{ $buttonText }}</x-molecules.button-link>
     </footer>
 </div>
