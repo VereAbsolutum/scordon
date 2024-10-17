@@ -23,6 +23,6 @@ class Logo extends Component
      */
     public function render()
     {
-        return view('components.atoms.logo');
+        return view('components.molecules.logo');
     }
 }
