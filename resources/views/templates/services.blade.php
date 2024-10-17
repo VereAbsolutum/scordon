@@ -9,17 +9,12 @@ $items = [
 
 <section id="servicos" class="servicos py-10 mt-10">
     <x-tw.layouts.container>
-        <x-atoms.heading1 class="text-center">
-            Serviços
-        </x-atoms.heading1>
-        <x-atoms.heading2 class="text-center">
-            Transformamos suas ideias em soluções digitais
-        </x-atoms.heading2>
 
-        <p class="text-center mb-4 mx-auto max-w-[550px]">
-            Descubra como nossos serviços de desenvolvimento de software podem
-            transformar seu negócio.
-        </p>
+        <x-molecules.section-header 
+            title="Serviços"
+            subtitle="Transformamos suas ideias em soluções digitais"
+            subheader="Descubra como nossos serviços de desenvolvimento de software podem transformar seu negócio."
+        />
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 p-5 rounded-lg mt-[5rem]">
             <div class="flex justify-center">

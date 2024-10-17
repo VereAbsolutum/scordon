@@ -2,6 +2,7 @@
 
 <div class="card-testimonial">
     <h2 class="text-left text-heading4 font-bold mb-4">Logo</h2>
+    
 
     <p class="text-left lg:mx-0 text-2xl prose lg:max-w-md mb-6 text-gray-700 max-w-full">
         {{ $testimonial }}

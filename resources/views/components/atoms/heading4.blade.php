@@ -8,9 +8,6 @@
 ];
 
     $variantClasses = $classes[$variant];
-
-
-
 @endphp
 
 <h1 {{ $attributes->merge(['class' => $variantClasses]) }} >{{ $slot }}</h1>
