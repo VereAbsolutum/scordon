@@ -2330,10 +2330,6 @@ html {
   width: 100%;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -2556,30 +2552,37 @@ html {
 
 .text-caption {
   font-size: 0.625rem;
+  line-height: 1.5;
 }
 
 .text-display {
   font-size: 3.5rem;
+  line-height: 1;
 }
 
 .text-footer {
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .text-heading1 {
   font-size: 2.5rem;
+  line-height: 1;
 }
 
 .text-heading3 {
   font-size: 1.75rem;
+  line-height: 1.2;
 }
 
 .text-heading4 {
   font-size: 1.5rem;
+  line-height: 1.2;
 }
 
 .text-heading5 {
   font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 .text-lg {
@@ -2589,14 +2592,17 @@ html {
 
 .text-paragraph1 {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .text-paragraph2 {
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .text-paragraph3 {
   font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 .text-sm {
@@ -2606,6 +2612,7 @@ html {
 
 .text-subheader {
   font-size: 1.125rem;
+  line-height: 1.2;
 }
 
 .text-xl {

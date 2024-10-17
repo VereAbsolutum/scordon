@@ -91,19 +91,19 @@ module.exports = {
                 sans: ["Montserrat", "sans-serif"],
             },
             fontSize: {
-                display: "3.5rem", // Título principal
-                heading1: "2.5rem", // Título principal (H1)
-                heading2: "2rem", // Título secundário (H2)
-                heading3: "1.75rem", // Título terciário (H3)
-                heading4: "1.5rem", // Título quaternário (H4)
-                heading5: "1.25rem", // Título quinário (H5)
-                subheader: "1.125rem", // Subtítulo
-                paragraph1: "1rem", // Parágrafo principal
-                paragraph2: "0.875rem", // Parágrafo secundário
-                paragraph3: "0.75rem", // Parágrafo terciário
-                caption: "0.625rem", // Legenda
-                footer: "0.875rem", // Texto de rodapé
-            },
+                display: ['3.5rem', { lineHeight: '1' }], // Título principal
+                heading1: ['2.5rem', { lineHeight: '1' }], // Título principal (H1)
+                heading2: ['2rem', { lineHeight: '1.2' }], // Título secundário (H2)
+                heading3: ['1.75rem', { lineHeight: '1.2' }], // Título terciário (H3)
+                heading4: ['1.5rem', { lineHeight: '1.2' }], // Título quaternário (H4)
+                heading5: ['1.25rem', { lineHeight: '1.2' }], // Título quinário (H5)
+                subheader: ['1.125rem', { lineHeight: '1.2' }], // Subtítulo
+                paragraph1: ['1rem', { lineHeight: '1.5' }], // Parágrafo principal
+                paragraph2: ['0.875rem', { lineHeight: '1.5' }], // Parágrafo secundário
+                paragraph3: ['0.75rem', { lineHeight: '1.5' }], // Parágrafo terciário
+                caption: ['0.625rem', { lineHeight: '1.5' }], // Legenda
+                footer: ['0.875rem', { lineHeight: '1.5' }], // Texto de rodapé
+              },
         },
     },
     plugins: [require("daisyui"), require("@tailwindcss/typography")],

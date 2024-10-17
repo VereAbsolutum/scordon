@@ -2,20 +2,21 @@
 
 @php
     $classes = [
-        "1" =>  "section-header max-w-xl mx-auto" 
+        "1" =>  "section-header max-w-xl text-center mx-auto", 
+        "2" =>  "section-header max-w-xl" 
     ];
 
-    $variantClasses = $classes[$variant] ?? '';
+    $variantClasses = $classes[$variant] ?? '2';
 @endphp
 
 <div {{ $attributes->merge([ "class" => $variantClasses ]) }}>
-    <x-atoms.heading1 class="text-center">
+    <h1 class="font-title font-medium text-heading5 text-secondary uppercase">
         {{ $title }}
-    </x-atoms.heading1>
-    <x-atoms.heading2 class="text-center">
+    </h1>
+    <h2 class="font-title font-medium text-heading1 uppercase leading-tight">
         {{ $subtitle }}
-    </x-atoms.heading2>
-    <x-atoms.sub-header class="text-center">
+    </h2>
+    <p class="font-normal text-subheader ">
         {{ $subheader }}
-    </x-atoms.sub-header>
+    </p>
 </div>
