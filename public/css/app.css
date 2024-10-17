@@ -2546,24 +2546,9 @@ html {
   line-height: 2.25rem;
 }
 
-.text-caption {
-  font-size: 0.625rem;
-  line-height: 1.5;
-}
-
-.text-display {
-  font-size: 3.5rem;
-  line-height: 1;
-}
-
 .text-display-sm {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-footer {
-  font-size: 0.875rem;
-  line-height: 1.5;
 }
 
 .text-heading1 {
@@ -2596,16 +2581,6 @@ html {
   line-height: 1.5;
 }
 
-.text-paragraph2 {
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.text-paragraph3 {
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2628,10 +2603,6 @@ html {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-extrabold {
-  font-weight: 800;
 }
 
 .font-medium {
@@ -2894,11 +2865,6 @@ html {
 
   .lg\:text-left {
     text-align: left;
-  }
-
-  .lg\:text-display-lg {
-    font-size: 3.5rem;
-    line-height: 1;
   }
 
   .lg\:text-display {
