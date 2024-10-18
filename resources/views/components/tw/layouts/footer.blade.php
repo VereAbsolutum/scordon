@@ -1,8 +1,8 @@
 @props(['footerItems' => []])
 
-<div class="bg-base-100 ">
+<div class="bg-base-100 bg-secondary D">
     <div class="container mx-auto px-4">
-        <footer class="footer text-base-content p-10">
+        <footer class="footer text-base-content p-10 text-white">
             <aside>
                 <svg
                     width="50"
@@ -23,9 +23,9 @@
             </aside>
             @foreach($footerItems as $items)
             <nav>
-                <h6 class="footer-title text-title-md">{{ $items['title'] }}</h6>
+                <h6 class="footer-title text-title-md text-white">{{ $items['title'] }}</h6>
                 @foreach($items['links'] as $content)
-                <a href="{{ $content['link'] }}" class="link link-hover text-navbar">{{ $content['text'] }}</a>
+                <a href="{{ $content['link'] }}" class="link link-hover text-navbarv text-white">{{ $content['text'] }}</a>
                 @endforeach
             </nav>
             @endforeach
