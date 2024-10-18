@@ -9,4 +9,4 @@
     $buttonClasses = $classes[$variant];
 @endphp
 
-<button class="{{ $buttonClasses }}">{{ $slot }}</button>
+<button {{ $attributes->merge(["class" => $buttonClasses ]) }} >{{ $slot }}</button>
