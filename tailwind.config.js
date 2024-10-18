@@ -20,14 +20,14 @@ module.exports = {
                 "primary-600": "#b45309",
                 "primary-700": "#92400e",
 
-                "secondary-50": "#e0f2fe",
-                "secondary-100": "#bae6fd",
-                "secondary-200": "#7dd3fc",
-                "secondary-300": "#38bdf8",
-                "secondary-400": "#0ea5e0",
-                "secondary-500": "#0284c7",
-                "secondary-600": "#0369a1",
-                "secondary-700": "#075985",
+                "secondary-50": "#f5f3ff",
+                "secondary-100": "#e0e7ff",
+                "secondary-200": "#c7d2fe",
+                "secondary-300": "#a5b4fc",
+                "secondary-400": "#818cf8",
+                "secondary-500": "#6366f1", // Roxo
+                "secondary-600": "#4f46e5",
+                "secondary-700": "#4338ca",
 
                 "accent-50": "#fff7ed",
                 "accent-100": "#ffedd5",
@@ -149,8 +149,8 @@ module.exports = {
             {
                 mytheme: {
                     primary: "#fcb801",
-                    secondary: "#1e40af",
-                    accent: "#f97316",
+                    secondary: "#6366f1", // Roxo
+                    accent: "#ffec8b", // Dourado Claro
                     neutral: "#374151",
                     "base-100": "#ffffff",
                     info: "#3b82f6",

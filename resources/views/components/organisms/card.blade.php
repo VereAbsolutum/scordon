@@ -1,6 +1,6 @@
 @props(['badge', 'title', 'items'])
 
-<div class="card w-full bg-primary-50 transition-transform duration-300 hover:scale-102" style="box-shadow: 0 10px 0 -5px #dedcb9;">
+<div class="card w-full bg-white transition-transform duration-300 hover:scale-102" style="box-shadow: 0 10px 0 -5px #dedcb9;">
     <div class="card-body">
         <h3 class="font-sans text-heading3 text-secondary font-medium  mb-4">{{ $title }}</h2>
         <ul class="list-none">

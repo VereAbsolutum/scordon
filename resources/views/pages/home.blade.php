@@ -17,6 +17,8 @@
     @include('../templates/hero')
     <!-- Services -->
     @include('../templates/services')
+    <!-- Destaque Telesuporte -->
+    @include('../templates/destaque-telesuporte')
     <!-- Depoimentos -->
     @include('../templates/depoimentos')
     <!-- FAQ -->
