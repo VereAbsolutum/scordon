@@ -1,7 +1,7 @@
 @props(['navItems' => []])
 
-<nav class="text-navbar text-gray-500">
-    <div class="container mx-auto px">
+<nav class="text-navbar bg-primary text-gray-500 absolute w-full">
+    <div class="container mx-auto">
         <div class="navbar px-0">
             <div class="flex-1">
                 <a class="btn btn-ghost text-subheader">SCordon</a>
@@ -18,7 +18,7 @@
                 <ul class="menu menu-horizontal px-1">
                     @foreach($items['links'] as $content)
                     <li>
-                        <x-molecules.button-link variant="menu">{{ $content['text'] }}</x-molecules.button-link>
+                        <x-molecules.button-link variant="menu" class="text-black">{{ $content['text'] }}</x-molecules.button-link>
                     </li>
                     @endforeach
                 </ul>
