@@ -14,9 +14,9 @@
                                     CdAdm, Gestão e Controle, num só lugar.
                                 </p>
                             </div>
-                            <x-molecules.button-cta variant="secondary" class="text-subheader h-auto">
-                                Fale com a gente, agora mesmo!
-                            </x-molecules.button-cta>
+                            <x-organisms.form-cta-name class="w-2/3">
+                                <x-molecules.input-field type="text" placeholder="Diga seu nome e fale com a gente!" />
+                            </x-organisms.form-cta-name>
                         </div>
                     </div>
                 </div>
