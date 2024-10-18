@@ -1,4 +1,4 @@
-<section id="hero" class=" bg-primary flex justify-center items-center w-full pt-12 " style="height: 70vh">
+<section id="hero" class=" bg-primary flex justify-center items-center w-full pt-12 " style="min-height: 70vh">
     <div class=" py-4 flex  align-center w-full" >
         <x-tw.layouts.container>
             <x-tw.layouts.flex>
