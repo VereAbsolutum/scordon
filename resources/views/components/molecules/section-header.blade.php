@@ -2,7 +2,7 @@
 
 @php
     $classes = [
-        "1" =>  "section-header max-w-xl text-center mx-auto",
+        "1" =>  "section-header max-w-xl text-center mx-auto mb-16",
         "2" =>  "section-header max-w-xl"
     ];
 
